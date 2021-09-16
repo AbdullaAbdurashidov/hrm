@@ -1,0 +1,26 @@
+server:
+  port: 8100
+  servlet:
+    context-path: /candidate-service
+
+spring:
+  application:
+    name: candidate-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hrm
+    password: 1234
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8700/eureka/

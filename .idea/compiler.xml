@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="candidate-service" />
         <module name="lib-feign" />
         <module name="lib-model" />
         <module name="zuul-gateway" />
@@ -17,6 +18,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="candidate-service" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="users-service" options="-parameters" />
       <module name="zuul-gateway" options="-parameters" />
