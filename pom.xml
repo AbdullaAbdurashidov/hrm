@@ -22,6 +22,7 @@
     <modules>
         <module>eureka-server</module>
         <module>lib-model</module>
+        <module>lib-feign</module>
     </modules>
 
 </project>
